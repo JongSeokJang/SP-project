@@ -1,0 +1,17 @@
+OBJECTS = 20121635.o
+SRCS = 20121635.c
+ 
+CC = gcc
+CFLAGS = -g -c
+ 
+TARGET = 20121635.out
+ 
+
+	
+$(TARGET) : $(OBJECTS)
+	$(CC) -o $(TARGET) $(OBJECTS)
+
+clean : 
+	rm -f $(OBJECTS) $(TARGET)
+
+20121635.o : 20121635.c
